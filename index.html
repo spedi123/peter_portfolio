@@ -26,24 +26,26 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav id="navbar">
+    <nav id="navbar" class="section">
       <div class="navbar__logo">
         <i class="fab fa-diaspora"></i>
         <a href="#">Peter</a>
       </div>
-      <div class="navbar__menu">
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skill</li>
-          <li class="navbar__menu__item">My Work</li>
-          <!-- <li class="navbar__menu__item">Testimonials</li> -->
-          <li class="navbar__menu__item">Contact</li>
-        </ul>
-      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skill</li>
+        <li class="navbar__menu__item">My Work</li>
+        <!-- <li class="navbar__menu__item">Testimonials</li> -->
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section">
       <img src="imgs/profile.png" alt="Peter's photo" class="home__avatar" />
       <h1 class="home__title">
         Hello, <br />
@@ -56,7 +58,8 @@
     </section>
     <!-- About -->
     <section id="about" class="section">
-      <h1>About me</h1>
+      <div class="section__container">
+        <h1>About me</h1>
       <p>
         Following my dream to become a developer, I underwent self development
         even though I was employed in full time position within a different
@@ -121,6 +124,7 @@
             <p class="job__period">2021.08~2021.11</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- Skills -->
@@ -209,81 +213,96 @@
     </section>
     <!-- Work -->
     <section id="work" class="section">
-      <h1>My work</h1>
-      <h3>Projcects</h3>
-      <div class="work__categories">
-        <button class="category__btn active">
-          All<span class="category__count">5</span>
-        </button>
-        <button class="category__btn">
-          Front-end<span class="category__count">1</span>
-        </button>
-        <button class="category__btn">
-          Back-end<span class="category__count">4</span>
-        </button>
-      </div>
-      <div class="work__projects">
-        <a href="#" class="project" target="blank">
-          <img class="project__img" src="imgs/projects/game.png" alt="Game" />
-          <div class="project__description">
-            <h3>Game Site</h3>
-            <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
-          </div>
-        </a>
-        <a href="#" class="project" target="blank">
-          <img class="project__img" src="imgs/projects/game.png" alt="Game" />
-          <div class="project__description">
-            <h3>Game Site</h3>
-            <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
-          </div>
-        </a>
-        <a href="#" class="project" target="blank">
-          <img class="project__img" src="imgs/projects/game.png" alt="Game" />
-          <div class="project__description">
-            <h3>Game Site</h3>
-            <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
-          </div>
-        </a>
-        <a href="#" class="project" target="blank">
-          <img class="project__img" src="imgs/projects/game.png" alt="Game" />
-          <div class="project__description">
-            <h3>Game Site</h3>
-            <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
-          </div>
-        </a>
-        <a href="#" class="project" target="blank">
-          <img class="project__img" src="imgs/projects/game.png" alt="Game" />
-          <div class="project__description">
-            <h3>Game Site</h3>
-            <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
-          </div>
-        </a>
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projcects</h3>
+        <div class="work__categories">
+          <button class="category__btn active">
+            All<span class="category__count">5</span>
+          </button>
+          <button class="category__btn">
+            Front-end<span class="category__count">1</span>
+          </button>
+          <button class="category__btn">
+            Back-end<span class="category__count">4</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a href="#" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/game.png" alt="Game" />
+            <div class="project__description">
+              <h3>Game Site</h3>
+              <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
+            </div>
+          </a>
+          <a href="#" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/game.png" alt="Game" />
+            <div class="project__description">
+              <h3>Game Site</h3>
+              <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
+            </div>
+          </a>
+          <a href="#" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/game.png" alt="Game" />
+            <div class="project__description">
+              <h3>Game Site</h3>
+              <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
+            </div>
+          </a>
+          <a href="#" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/game.png" alt="Game" />
+            <div class="project__description">
+              <h3>Game Site</h3>
+              <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
+            </div>
+          </a>
+          <a href="#" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/game.png" alt="Game" />
+            <div class="project__description">
+              <h3>Game Site</h3>
+              <span>Shopping mall coding with HTML, CSS, and JavaScript</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <!-- Testimonials -->
-    <!-- <section class="testimonials">
-      <div class="testimonials">
-        <div class="testimonial">
-          <img
-            src="imgs/testimonial/people1.jpg"
-            alt="people"
-            class="testimonial__avatar"
-          />
-          <div class="testimonial__spechBuble">
-            <p>bulbula</p>
-            <p class="name">Esther</p>
+    <!-- <section id="testimonials" class="section">
+      <div class="section__container">
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="imgs/testimonial/people1.jpg"
+              alt="people"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__spechBuble">
+              <p>bulbula</p>
+              <p class="name">Esther</p>
+            </div>
           </div>
         </div>
       </div>
     </section> -->
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title"></h1>
-      <h2 class="contact__email"></h2>
+      <h1 class="contact__title">Let's talk about coding</h1>
+      <h2 class="contact__email">peteran8604@gmail.com</h2>
       <div class="contact__links">
-        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/spedi123" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/seonggyu-an-16a965152/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
     </section>
+
+    <!-- <button class="navbar__toggle-btn"> -->
+    <button class="arrow-up"></button>
+      <i class="fas fa-bars"></i>
+    </button>
   </body>
 </html>
